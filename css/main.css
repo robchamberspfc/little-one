@@ -1,9 +1,16 @@
 @CHARSET "UTF-8";
-body {
-    background-color: #CEECF5;
+
+@font-face {
+    font-family: Babylove;
+    src: url(font/Babylove.ttf);
 }
 
-h1 {
-    color: navy;
-    margin-left: 40px;
+div.header {
+    font-family: Babylove;
+  	 font-size:x-large;
+}
+
+
+body {
+    background-color: #ffffff;
 }
