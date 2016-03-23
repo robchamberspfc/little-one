@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Baby's first site</title>
+    	<title>Baby's first site</title>
+  	  	<meta name="robots" content="noindex, nofollow" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="stylesheet" type="text/css" href="css/main.css">
   		<link rel="script" type="text/javascript" href="js/main.js">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>  
+		<script>
+        
+        	var folder = "content/images/";
+  
+          $.ajax({
+              url : folder,
+              success: function (data) {
+                  $(data).find("a").attr("href", function (i, val) {
+                      if( val.match(/\.(JPG|jpg|png|gif)$/) ) { 
+                          $("#images").append( "<img src='"+ folder + val +"' width=100%>" );
+                      } 
+                  });
+              }
+          });
+ 		 </script>  
+  
   
 </head>
 <body>
@@ -13,17 +33,19 @@
 
     </div>
       <div class="col-8 header">
-           <h1>
-              Name
-          </h1>
-          <p>
-             Born 
-          </p>
-          <p>
-            Weight
-          </p>
-        	 <hr>
-        <p>This is where some images go</p>
+         <p>
+           Introducing:
+         </p>  
+        	<h1>
+              XX YY Chambers
+         </h1>
+         <p>
+             Born: Bristol, xx July 2016
+         </p>
+         <p>
+            Weight: 
+         </p>
+        <div id='images'> </div>
     	</div>
     <div class="col-2 column">
     </div>
