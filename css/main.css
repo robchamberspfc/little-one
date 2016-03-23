@@ -1,12 +1,7 @@
 @CHARSET "UTF-8";
 
-@font-face {
-   font-family: Babylove;
-   src: url(font/Babylove.ttf);
-}
-
 div.header {
-   font-family: Babylove;
+   font-family: 'Play';
   	font-size:x-large;
 	text-align: center;
 }
@@ -17,12 +12,11 @@ body {
 
 div.column {
   background-color: #ccccff;
-  height: 1000px;
-  
+  height: 2000px;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .col-1 {width: 8.33%;}
