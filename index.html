@@ -9,19 +9,12 @@
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>  
 		<script>
-        
-        	var folder = "content/images/";
-  
-          $.ajax({
-              url : folder,
-              success: function (data) {
-                  $(data).find("a").attr("href", function (i, val) {
-                      if( val.match(/\.(JPG|jpg|png|gif)$/) ) { 
-                          $("#images").append( "<img src='"+ folder + val +"' width=100%>" );
-                      } 
-                  });
-              }
-          });
+          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
+               function (data) {
+                 $.each(data, function(i, item) {
+                   $("#images").append("<img src='" + item.download_url + "' width=100%>");
+                 });
+               });
  		 </script>  
   
   
