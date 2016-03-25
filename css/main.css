@@ -4,15 +4,25 @@ div.header {
    font-family: 'Play';
   	font-size:x-large;
 	text-align: center;
+  	background-color: #BEA1A3;
+   color: #523E39;
 }
 
 body {
-    background-color: #e6e6ff;
+    background-color: #523E39;
 }
 
 div.column {
-  background-color: #ccccff;
-  height: 2000px;
+  height: 1000px;
+}
+
+img {
+  width: 100%;
+  padding-bottom: 6px
+}
+
+img.column {
+  width: 97%;
 }
 
 * {

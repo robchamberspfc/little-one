@@ -12,9 +12,11 @@
           $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
                function (data) {
                  $.each(data, function(i, item) {
-                   $("#images").append("<img src='" + item.download_url + "' width=100%>");
+                   $("#images").append("<img src='" + item.download_url + "'>");
                  });
                });
+        
+       
  		 </script>  
   
   
@@ -22,7 +24,9 @@
 <body>
   
   <div class="row">
-    <div class="col-2 column">
+    <div class="col-3 column">
+      
+      <img class= "column" src="/content/Leftcolumn.png">
 
     </div>
       <div class="col-8 header">
@@ -30,7 +34,7 @@
            Introducing:
          </p>  
         	<h1>
-              XX YY Chambers
+              XX XY Chambers
          </h1>
          <p>
              Born: Bristol, xx July 2016
@@ -40,8 +44,6 @@
          </p>
         <div id='images'> </div>
     	</div>
-    <div class="col-2 column">
-    </div>
   </div>
   
   
