@@ -1,41 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-    	<title>Baby's first site</title>
-  	  	<meta name="robots" content="noindex, nofollow" />
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
-  		<link rel="stylesheet" type="text/css" href="css/main.css">
-  		<link rel="script" type="text/javascript" href="js/main.js">
-  		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-</head>
-<body>
-  
-  <div class="row">
-    <div class="col-3 column">
-      <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
+<script language="JavaScript1.2">
+<!--
 
-    </div>
-      <div class="col-8 main">
-         <p>Introducing: </p>  
-        	<h1>XX XY Chambers</h1>
-         <p>Born: Bristol, xx July 2016</p>
-         <p>Weight:</p>
-        <div id='images'> </div>
-    	</div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script>
-          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
-               function (data) {
-                 $.each(data, function(i, item) {
-                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'>");
-                 });
-               });
-        
- 		 </script>
- 
-  <script src="js/lazyload.min.js"></script>
+
+function get_password() {
+  orig_pass = prompt("Please enter password","");
+  if (orig_pass!=null && orig_pass!="")
+  password = new Array(orig_pass.length);
+  for(i=0; i<orig_pass.length; i++) {
+    password[i] = orig_pass.charCodeAt(i);
+  }
+  return password;
+}
+
+password = get_password();
+orig = unescape("%20m%3Cdla%22mieEYixms.%3Em%3EmP%3Emm%3Cmlmmnocm%3Eap%3Eaimdaewde%20wttsotanof%22-hexh%3Ditm/8m%3C/.epdep%3Etme%22%22-m%3C/tc%22rr%3Eamm%22t%20%20drtP/Cl%3Dn/giOmR%3D%3Eme%3Cttin%3C-tmhhlle%20m%21%3C%3Cmm%20e-%3AmaotoldthT%27i%60llpUmpcteecmtor%2Cjihhv%60mel%20%20isne%20hulee%20m%20s%20ttuein.aiDnimmI%20khhle%20r%20m%3Cm%3Ee%20efamrootderm%20oemtdec.emy%20%20a%22nttwti%2Cm%20lt%20rf%20%20ilemihhum%3C%20e.ears%27%20%3Einxnmnk%20xhl%3Bilt%3CaneTetm/ea/lcltm/%3Ehmimi%20ua%3Ce%20mm%20thmmllrocr%20n.auloF%3D%20%22ca%20l%3C%3Etnolcotakle%20la%3Dqicf%3Ds/hftm/itdnohttmt%27r1%20%20k%20ao/%21%20tmp-et%20-tmm%20%3C%20mymd%3E%20mimnNtmi%3E");
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+  if (passnum == -1) passnum = password.length - 1;
   
-</body>
-</html>
+  pos1 = i;
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+for(i=0;i<orig.length;i++) {
+  orig1 = orig1 + orig[i];
+}
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
+</script>
+<noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
