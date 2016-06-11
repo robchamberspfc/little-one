@@ -12,6 +12,14 @@ body {
     background-color: #523E39;
 }
 
+a {
+      font-family: 'Play';
+  	font-size:200%;
+	text-align: center;
+  	background-color: #523E39;
+   color: #CEBEBA;
+}
+
 div.column {
   height: 1000px;
 }

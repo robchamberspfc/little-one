@@ -5,8 +5,8 @@
   	  	<meta name="robots" content="noindex, nofollow" />
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
-  		<link rel="stylesheet" type="text/css" href="./css/main.css">
-  		<link rel="script" type="text/javascript" href="./js/main.js">
+  		<link rel="stylesheet" type="text/css" href="/main/css/main.css">
+  		<link rel="script" type="text/javascript" href="/main/js/main.js">
   		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -20,20 +20,19 @@
 
     	</div>
   </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script>
-          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/markdown',
-               function (data) {
-                 $.each(data, function(i, item) {
-                   $("#images").append("<xmp theme="united" style="display:none;">" + item.download_url + "</xmp>
-");
-                 });
-               });
+    
+    $.ajax({
+    url: https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/markdown/test.md,
+    success: function(results)
+    {
+        console.log(var content = results.data.content;)
+    });
         
  		 </script>
+ <div class="results">
+   </div>
  
-  <script src="./js/lazyload.min.js"></script>
-  <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-  
 </body>
 </html>
