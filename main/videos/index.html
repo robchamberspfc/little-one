@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title>Baby's first site</title>
+  	  	<meta name="robots" content="noindex, nofollow" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
+  		<link rel="stylesheet" type="text/css" href="./css/main.css">
+  		<link rel="script" type="text/javascript" href="./js/main.js">
+  		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  
+  <div class="row">
+    <div class="col-3 column">
+      <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
+
+      <p>
+        <a href = "../main/index.html">Home</a>
+      </p>
+      <p>
+        <a href = "#">Blog</a>
+      </p>
+      <p>
+        <a href = "mailto:robchamberspfc@hotmail.com,hannahmillen@live.co.uk">Email us photos</a>
+      </p>
+      
+    </div>
+      <div class="col-8 main">
+         <p>Introducing: </p>  
+        	<h1>XX XY Chambers</h1>
+         <p>Born: Bristol, xx July 2016</p>
+         <p>Weight:</p>
+        <div id='images'> </div>
+    	</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
+               function (data) {
+                 $.each(data, function(i, item) {
+                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'>");
+                 });
+               });
+        
+ 		 </script>
+ 
+  <script src="./js/lazyload.min.js"></script>
+  
+</body>
+</html>
