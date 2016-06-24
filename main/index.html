@@ -16,10 +16,13 @@
       <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
 
       <p>
-        <a href = "../main/index.html">Home</a>
+        <a href = "./index.html">Home</a>
       </p>
       <p>
-        <a href = "#">Blog</a>
+        <a href = "videos/index.html">Videos</a>
+      </p>
+      <p>
+        <a href = "blog/index.html">Blog</a>
       </p>
       <p>
         <a href = "mailto:robchamberspfc@hotmail.com,hannahmillen@live.co.uk">Email us photos</a>
@@ -31,15 +34,16 @@
         	<h1>XX XY Chambers</h1>
          <p>Born: Bristol, xx July 2016</p>
          <p>Weight:</p>
-        <div id='video'> </div>
+        <div id='images'> </div>
     	</div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script>
-          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/videos',
+          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
                function (data) {
                  $.each(data, function(i, item) {
-                   $("#video").append("<video width="100%" controls> <source src='" + item.download_url + "'type="video/mp4">Your browser does not support HTML5 video.</video>");
+                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'>");
+                  
                  });
                });
         
