@@ -31,6 +31,7 @@ p.blog {
   	padding-left: 20px;
 }
 
+
 h2.blog {
    font-family: 'Play';
   	font-size:100%;
@@ -47,11 +48,16 @@ div.column {
 
 img {
   width: 100%;
-  padding-bottom: 6px
+  padding-bottom: 6px;
 }
 
 img.column {
   width: 97%;
+}
+
+img.decoration {
+  align-items: center;
+  width: 50%;
 }
 
 * {
