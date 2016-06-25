@@ -60,6 +60,36 @@ img.decoration {
   width: 50%;
 }
 
+hr { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #CEBEBA; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+  margin-right: 10px
+}
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #CEBEBA; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+hr.top:after { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #CEBEBA; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+
 * {
   box-sizing: border-box;
 }
