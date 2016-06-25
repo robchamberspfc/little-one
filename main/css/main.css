@@ -9,16 +9,37 @@ div.main {
 }
 
 body {
-    background-color: #523E39;
+   background-color: #523E39;
 }
 
 a {
-      font-family: 'Play';
+   font-family: 'Play';
   	font-size:200%;
 	text-align: center;
   	background-color: #523E39;
    color: #CEBEBA;
+   text-decoration: none;
+   padding-left: 20px;
 }
+
+p.blog {
+   font-family: 'Play';
+  	font-size:80%;
+	text-align: left;
+  	background-color: #CEBEBA;
+   color: #523E39;
+  	padding-left: 20px;
+}
+
+h2.blog {
+   font-family: 'Play';
+  	font-size:100%;
+	text-align: left;
+   background-color: #CEBEBA;
+   color: #523E39;
+   padding-left: 20px;
+}
+
 
 div.column {
   height: 1000px;
