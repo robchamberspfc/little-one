@@ -72,11 +72,12 @@ h2.main {
 
 p {
    font-family: 'Play';
-  	font-size:80%;
+  	font-size:60%;
 	text-align: left;
   	background-color: #CEBEBA;
    color: #523E39;
   	padding-left: 20px;
+  	padding-right: 20px;
 }
 
 
@@ -91,7 +92,7 @@ h2 {
 
 h3 {
    font-family: 'Play';
-  	font-size:80%;
+  	font-size:70%;
 	text-align: left;
    background-color: #CEBEBA;
    color: #523E39;
