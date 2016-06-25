@@ -1,9 +1,28 @@
 @CHARSET "UTF-8";
 
+div {
+  font-family: 'Play';
+  
+}
+
 div.main {
-   font-family: 'Play';
+  	background-color: #CEBEBA;
+   color: #523E39;
+}
+
+div.head {
   	font-size:200%;
 	text-align: center;
+  	background-color: #CEBEBA;
+   color: #523E39;
+}
+div.nav {
+  	background-color: #523E39;
+   color: #CEBEBA;
+}
+
+div.blog {
+  	font-size:200%;
   	background-color: #CEBEBA;
    color: #523E39;
 }
@@ -12,17 +31,46 @@ body {
    background-color: #523E39;
 }
 
-a {
-   font-family: 'Play';
-  	font-size:200%;
+p.head {
+   font-size:100%;
 	text-align: center;
+   padding-left: 0;
+
+}
+
+p.nav {
+   font-size:200%;
   	background-color: #523E39;
    color: #CEBEBA;
-   text-decoration: none;
    padding-left: 20px;
 }
 
-p.blog {
+a.nav {
+   color: #CEBEBA;
+   text-decoration: none;
+}
+
+
+p.main {
+   font-family: 'Play';
+  	font-size:80%;
+	text-align: center;
+  	background-color: #CEBEBA;
+   color: #523E39;
+  	padding-left: 20px;
+}
+
+
+h2.main {
+   font-family: 'Play';
+  	font-size:100%;
+	text-align: left;
+   background-color: #CEBEBA;
+   color: #523E39;
+   padding-left: 20px;
+}
+
+p {
    font-family: 'Play';
   	font-size:80%;
 	text-align: left;
@@ -32,9 +80,18 @@ p.blog {
 }
 
 
-h2.blog {
+h2 {
    font-family: 'Play';
   	font-size:100%;
+	text-align: left;
+   background-color: #CEBEBA;
+   color: #523E39;
+   padding-left: 20px;
+}
+
+h3 {
+   font-family: 'Play';
+  	font-size:80%;
 	text-align: left;
    background-color: #CEBEBA;
    color: #523E39;
