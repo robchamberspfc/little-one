@@ -44,6 +44,7 @@ p.nav {
   	background-color: #523E39;
    color: #CEBEBA;
    padding-left: 20px;
+   margin-top:20px;
 }
 
 a.nav {
@@ -112,6 +113,7 @@ img {
 
 img.column {
   width: 97%;
+  display: inline
 }
 
 img.decoration {
@@ -147,13 +149,21 @@ a.button:hover {
 }
 
 
-hr { 
+hr {
+    border-style: solid;
+    border-color: #523E39;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-right: 10px
+}
+
+hr.top { 
   height: 30px; 
   border-style: solid; 
   border-color: #CEBEBA; 
   border-width: 1px 0 0 0; 
-  border-radius: 20px; 
-  margin-right: 10px
+  border-radius: 20px;
+  margin: 15px 10px 0 0;
 }
 hr:before { 
   display: block; 
