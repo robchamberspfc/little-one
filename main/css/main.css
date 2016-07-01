@@ -50,6 +50,7 @@ p.nav {
 a.nav {
    color: #CEBEBA;
    text-decoration: none;
+   outline: none;
 }
 
 
@@ -114,6 +115,11 @@ img {
 img.column {
   width: 97%;
   display: inline
+}
+img.menu {
+  width: 97%;
+  display: inline;
+  padding-left:20px
 }
 
 img.decoration {
