@@ -47,7 +47,7 @@
           $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
                function (data) {
                  $.each(data, function(i, item) {
-                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'>");
+                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a>");
                   
                  });
                });
@@ -55,6 +55,6 @@
  		 </script>
   
   <script src="./js/lazyload.min.js"></script>
-  
+
 </body>
 </html>

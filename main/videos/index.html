@@ -45,7 +45,7 @@
           $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/video',
                function (data) {
                  $.each(data, function(i, item) {
-                   $("#video").append("<video width='100%' controls> <source src='" + item.download_url + "' type='video/mp4'> Your browser does not support HTML5 video.</video>");
+                   $("#video").append("<video width='100%' controls> <source src='" + item.download_url + "' type='video/mp4'> Your browser does not support HTML5 video.</video><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a>");
                  });
                });
         
