@@ -83,7 +83,6 @@ p {
   	padding-right: 20px;
 }
 
-
 h2 {
    font-family: 'Play';
   	font-size:100%;
@@ -117,9 +116,10 @@ img.column {
   display: inline
 }
 img.menu {
-  width: 97%;
+  width: 93%;
   display: inline;
-  padding-left:20px
+  padding-left:20%;
+  padding-top:5%
 }
 
 img.decoration {
