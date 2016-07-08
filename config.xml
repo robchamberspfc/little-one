@@ -18,6 +18,6 @@
     </author>
 
 		<platform name="android">
-    <icon src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/icon.jpg" width="180" height="180" />
+    <icon src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Icon.jpg" width="180" height="180" />
 		</platform>
 </widget>
