@@ -16,7 +16,8 @@
     <author href="twitter.com/robchamberspfc" email="robchamberspfc@gmail.com">
         Rob Chambers
     </author>
-      
-    <icon src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/icon.jpg" platform="ios" width="180" height="180" />
 
+		<platform name="android">
+    <icon src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/icon.jpg" width="180" height="180" />
+		</platform>
 </widget>
