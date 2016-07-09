@@ -19,6 +19,7 @@
 
 		<platform name="android">
     		<icon src="icon.png" />
+         <splash src="splash.png" />
 		</platform>
       
       <preference name="loadUrlTimeoutValue" value="700000" />
