@@ -6,6 +6,7 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
   		<link rel="stylesheet" type="text/css" href="../css/main.css">
+  		<link rel="stylesheet" type="text/css" href="../css/tiled.css">
   		<link rel="script" type="text/javascript" href="../js/main.js">
   		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
 </head>
@@ -51,7 +52,7 @@
           $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images/guest',
                function (data) {
                  $.each(data, function(i, item) {
-                   $("#images").append("<img class='lazyload' data-src='" + item.download_url + "'><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a>");
+                   $("#images").append("<div class='box'><div class='boxInner'><a href='#"+ item.sha +"'><img class='lazyload tiled' data-src='" + item.download_url + "'></a><div id='"+ item.sha +"' class='modalDialog'><div><img class='lazyload modal' data-src='" + item.download_url + "'><a href= '#close' class='button'>Close</a><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a></div></div></div></div>");
                   
                  });
                });
