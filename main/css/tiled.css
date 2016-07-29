@@ -73,13 +73,13 @@ a.tiled-button:hover {
    color: #FFF;
    padding: 10px;
    text-align: center;
-   -webkit-transition: all 0.3s ease-out;
+   /**-webkit-transition: all 0.3s ease-out;
    -moz-transition: all 0.3s ease-out;
    -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;*/
 }
-body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-   margin-bottom: 0;
+/**body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;*/
 }
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
@@ -131,9 +131,9 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
+	/**-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;*/
 	pointer-events: none;
 }
 
