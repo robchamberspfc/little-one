@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    	<title>Baby's first site: Guest images</title>
+    	<title>Baby's first site: Guest photos</title>
   	  	<meta name="robots" content="noindex, nofollow" />
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
@@ -52,7 +52,7 @@
   </div>
   <script src="../js/jquery-3.0.0.min.js"></script>
 		<script>
-          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images/guest',
+          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/guest',
                function (data) {
                  $.each(data, function(i, item) {
                    $("#images").append("<div class='box'><div class='boxInner'><a href='#"+ item.sha +"'><img class='lazyload tiled' data-src='" + item.download_url + "'></a><div id='"+ item.sha +"' class='modalDialog'><div><img class='lazyload modal' data-src='" + item.download_url + "'><a href= '#close' class='button'>Close</a><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a></div></div></div></div>");
