@@ -111,6 +111,14 @@ img {
   display: block
 }
 
+img.inline {
+  width: auto;
+  max-height:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 img.column {
   width: 97%;
   display: inline
