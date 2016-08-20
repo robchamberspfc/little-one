@@ -270,13 +270,9 @@ div {
   font-size: 80%;
 }
   
-a.button {
-   display: none;
-}
-  
-/* img {
+ img {
   padding-bottom: 5px;
-}  */
+} 
 
 img.column {
   		width: 97%;
@@ -292,4 +288,144 @@ hr.top:before {
   height: 0; 
 }  
   
+}
+
+img.tiled {
+  display: inline
+  
+}
+
+img.modal {
+  display: block;
+  max-height: calc(100vh - 150px);
+  width: auto;
+  
+}
+
+a.tiled-button {
+    font-family: 'Play';
+  	 background-color: #523E39;
+    color: #CEBEBA;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+  	 float: right;
+}
+a.tiled-button:hover {
+  
+    background-color: #8A6E67;
+    color: #CEBEBA;
+    border: 1px solid #8A6E67; 
+    padding: 7px 7px;
+  
+}
+
+.wrap {
+   overflow: hidden;
+   margin: 10px;
+}
+.box {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
+}
+.boxInner {
+   position: absolute;
+   left: 8px;
+   right: 8px;
+   top: 8px;
+   bottom: 8px;
+   overflow: hidden;
+}
+.boxInner img {
+   height:100%
+}
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 5px;
+   text-align: center;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+   img.modal {
+     max-width:100%;
+     height:auto;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+   img.modal {
+     max-width:100%;
+     height:auto;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
+
+.modalDialog {
+   width: auto;
+   display: inline-block;
+   text-align:center;
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	/**-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;*/
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: auto;
+   display: inline-block;
+	position: relative;
+	margin: 5% auto;
+	padding: 5px;
+	background: #CEBEBA;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
 }
