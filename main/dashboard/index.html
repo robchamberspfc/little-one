@@ -129,7 +129,8 @@
           $('#container').highcharts({
               chart: {
                   type: 'line',
-                  backgroundColor: '#CEBEBA'
+                  backgroundColor: '#CEBEBA',
+                  marginTop: 40
               },
               title: {
                   text: null
@@ -139,7 +140,11 @@
               },
               yAxis: {
                   title: {
-                      text: 'Weight (Kg)'
+                      align: 'high',
+                      offset: -120,
+                      rotation: 0,
+                      y: -15,
+                      text: 'Weight (Kilograms)'
                   },
                   min: 0
               },
