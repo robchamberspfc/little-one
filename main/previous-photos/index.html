@@ -6,8 +6,8 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="script" type="text/javascript" href="./js/main.js">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="script" type="text/javascript" href="../js/main.js">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -25,15 +25,7 @@
             </a>
           </p>
           <p class = "nav">
-            <a href = "first-month/index.html" class = "nav">First month
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "second-month/index.html" class = "nav">Second month
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "months-three-to-six/index.html" class = "nav">Months three to six
+            <a href = "first-month/index.html" class = "nav">Previous photos
             </a>
           </p>
           <p class = "nav">
@@ -58,44 +50,13 @@
       </div>
       <div class="col-8 main">
         <div class = "head">
-          <p class = "head">Introducing: 
-          </p>  
-          <h1>Albert Stephen Xavier Chambers
+          <h1>
+            Previous photos
           </h1>
-          <p class = "head">Born: Bristol, 20 July 2016, 23:18
-          </p>
-          <p class = "head">Weight: 7 lbs 2 oz
-          </p>
-        </div>
-        <div>
+          <h2>
+            Select a batch of photos
+          </h2>
           <div id="images"> 
-          </div>
-        </div>
-        <div class="box">
-          <div class="boxInner">
-            <br>
-            <p class = "head">View more photos in 
-              <a href = "first-month/index.html">Bertie's first month
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="boxInner">
-            <br>
-            <p class = "head">View more photos in 
-              <a href = "second-month/index.html">Bertie's second month
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="boxInner">
-            <br>
-            <p class = "head">View more photos in 
-              <a href = "months-three-to-six/index.html">Bertie's third to sixth months
-              </a>
-            </p>
           </div>
         </div>
       </div>
@@ -107,21 +68,26 @@
         </div>
       </div>
     </div>
-    <script src="./js/jquery-3.0.0.min.js">
+    <script src="../js/jquery-3.0.0.min.js">
     </script>
-    <script src="./js/lazyload.min.js">
+    <script src="../js/lazyload.min.js">
     </script>
     <script>
-      $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/images',
+      $.get('previous-photos.json',
             function (data) {
               $.each(data, function(i, item) {
-                $("#images").append("<div class='box'><div class='boxInner'><a href='#"+ item.sha +"'><img class='lazyload tiled' data-src='" + item.download_url + "'></a><div id='"+ item.sha +"' class='modalDialog'><div><img class='lazyload modal' data-src='" + item.download_url + "'><a href= '#close' class='button'>Close</a><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a></div></div></div></div>");
+                $("#images").append("<div class='box'><div class='boxInner'><img class='lazyload tiled' data-src='" 
+                                    + item.photos.image1 + "'></div></div><div class='box hiddenmobile'><div class='boxInner'><img class='lazyload tiled' data-src='" 
+                                    + item.photos.image2 + "'></div></div><div class='box hiddenmobile hiddentablet'><div class='boxInner'><img class='lazyload tiled' data-src='" 
+                                    + item.photos.image3 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop'><div class='boxInner'><img class='lazyload tiled' data-src='" 
+                                    + item.photos.image4 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop hiddenmediumdesktop'><div class='boxInner '><img class='lazyload tiled' data-src='" 
+                                    + item.photos.image5 + "'></div></div><h3> Find more photos in <a href = '" + item.url + 
+                                    "'>" + item.title + "</a></h3>" );
               }
                     );
             }
            );
     </script>
-
     <script>
       (function(i,s,o,g,r,a,m){
         i['GoogleAnalyticsObject']=r;
