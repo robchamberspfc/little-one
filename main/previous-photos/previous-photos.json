@@ -21,9 +21,42 @@
       "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/second-month/IMG_20160920_074923.jpg"
     }
   },
-  {
-    "title": "Bertie's third to sixth months",
-    "url": "../months-three-to-six/index.html",
+    {
+    "title": "Bertie's third month",
+    "url": "../third-month/index.html",
+    "photos": {
+      "image1":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image2":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image3":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG"
+    }
+  },
+      {
+    "title": "Bertie's fouth month",
+    "url": "../fourth-month/index.html",
+    "photos": {
+      "image1":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image2":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image3":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG"
+    }
+  },
+      {
+    "title": "Bertie's fifth month",
+    "url": "../fifth-month/index.html",
+    "photos": {
+      "image1":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image2":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image3":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
+      "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG"
+    }
+  },
+      {
+    "title": "Bertie's sixth month",
+    "url": "../sixth-month/index.html",
     "photos": {
       "image1":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
       "image2":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/images/DSC00722.JPG",
