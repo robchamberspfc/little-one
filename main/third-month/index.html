@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title>Baby's first site: Bertie, month three</title>
+  	  	<meta name="robots" content="noindex, nofollow" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="shortcut icon" href="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/favicon.ico" type="image/x-icon">
+  		<link rel="stylesheet" type="text/css" href="../css/main.css">
+  		<link rel="script" type="text/javascript" href="../js/main.js">
+  		<link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  
+  <div class="row">
+    <div class="col-3 column">
+      <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
+		<hr class = "top">
+      <div class = "nav">
+      <p class = "nav">
+        <a href = "../index.html" name = "menu" class = "nav">Home</a>
+      </p>
+      <p class = "nav">
+        <a href = "../videos/index.html" class = "nav">Videos</a>
+      </p>
+      <p class = "nav">
+        <a href = "../previous-photos/index.html" class = "nav">Previous photos</a>
+      </p>
+      <p class = "nav">
+        <a href = "../guest/index.html" class = "nav">Guest photos</a>
+      </p>
+      <p class = "nav">
+        <a href = "../blog/index.html" class = "nav">Blog</a>
+      </p>
+      <p class = "nav">
+        <a href = "mailto:robchamberspfc@hotmail.com,hannahmillen@live.co.uk" class = "nav">Email us photos</a>
+      </p>
+      </div>
+      <br>
+      <hr>      
+    </div>
+      <div class="col-8 main">
+        <div class = "head">
+         <h1>
+           Bertie, month three
+          </h1>         
+        </div>
+        <div id='images'> </div>
+    	</div>
+    	<div class="col-1 menu">
+        <div>
+          <a href="#menu"><img class= "menu" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/menu.png"></a>
+        </div>
+      </div>
+  </div>
+  <script src="../js/jquery-3.0.0.min.js"></script>
+		<script>
+          $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/third-month',
+               function (data) {
+                 $.each(data, function(i, item) {
+                   $("#images").append("<div class='box'><div class='boxInner'><a href='#"+ item.sha +"'><img class='lazyload tiled' data-src='" + item.download_url + "'></a><div id='"+ item.sha +"' class='modalDialog'><div><img class='lazyload modal' data-src='" + item.download_url + "'><a href= '#close' class='button'>Close</a><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a></div></div></div></div>");
+                  
+                 });
+               });
+        
+ 		 </script>
+  
+  <script src="../js/lazyload.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82810278-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
