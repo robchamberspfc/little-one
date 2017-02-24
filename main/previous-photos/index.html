@@ -15,35 +15,7 @@
       <div class="col-3 column">
         <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
         <hr class = "top">
-        <div class = "nav">
-          <p class = "nav">
-            <a href = "../index.html" name = "menu" class = "nav">Home
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "../videos/index.html" class = "nav">Videos
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "../previous-photos/index.html" class = "nav">Previous photos
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "../guest/index.html" class = "nav">Guest photos
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "../blog/index.html" class = "nav">Blog
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "../dashboard/index.html" class = "nav">Dashboard
-            </a>
-          </p>
-          <p class = "nav">
-            <a href = "mailto:robchamberspfc@hotmail.com,hannahmillen@live.co.uk" class = "nav">Email us photos
-            </a>
-          </p>
+        <div id = "nav">
         </div>
         <br>
         <hr>      
@@ -83,6 +55,16 @@
                                     + item.photos.image4 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop hiddenmediumdesktop'><div class='boxInner '><img class='lazyload tiled' data-src='" 
                                     + item.photos.image5 + "'></div></div><h3> Find more photos in <a href = '" + item.url + 
                                     "'>" + item.title + "</a></h3>" );
+              }
+                    );
+            }
+           );
+    </script>
+    <script>
+      $.get('/main/navigation.json',
+            function (data) {
+              $.each(data, function(i, item) {
+                $("#nav").append("<p class = 'nav'><a href = '" +item.url+"' = 'menu' class = 'nav'>"+item.title+"</a></p>");
               }
                     );
             }
