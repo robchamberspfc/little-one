@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Home",
+    "url": "/main/index.html"
+  },
+  {
+    "title": "Videos",
+    "url": "/main/videos/index.html"
+  },
+    {
+    "title": "Previous photos",
+    "url": "/main/previous-photos/index.html"
+  },
+      {
+    "title": "Guest photos",
+    "url": "/main/guest/index.html"
+  },
+      {
+    "title": "Blog",
+    "url": "/main/blog/index.html"
+  },
+      {
+    "title": "Email us photos",
+    "url": "mailto:robchamberspfc@hotmail.com,hannahmillen@live.co.uk"
+
+  }
+]
