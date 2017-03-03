@@ -64,5 +64,16 @@
       "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/sixth-month/IMG_20170101_135922.jpg",
       "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/sixth-month/IMG_20170114_084009.jpg"
     }
+  },
+        {
+    "title": "Bertie's seventh month",
+    "url": "../seventh-month/index.html",
+    "photos": {
+      "image1":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/seventh-month/DSC00725.JPG",
+      "image2":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/seventh-month/IMG_20170121_151325.jpg",
+      "image3":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/seventh-month/IMG_20170123_182927.jpg",
+      "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/seventh-month/IMG_20170211_085229.jpg",
+      "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/seventh-month/IMG_20170212_093917.jpg"
+    }
   }
 ]
