@@ -37,29 +37,16 @@
         </div>
       </div>
     </div>
-    <script src="../js/jquery-3.0.0.min.js">
+    <script src="/main/js/lazyload.min.js">
     </script>
+    <script src="/main/js/jquery-3.0.0.min.js">
+    </script>
+    <!-- set the directory to load images from -->
     <script>
-      $.get('https://api.github.com/repos/robchamberspfc/little-one/contents/content/forth-month',
-            function (data) {
-              $.each(data, function(i, item) {
-                $("#images").append("<div class='box'><div class='boxInner'><a href='#"+ item.sha +"'><img class='lazyload tiled' data-src='" + item.download_url + "'></a><div id='"+ item.sha +"' class='modalDialog'><div><img class='lazyload modal' data-src='" + item.download_url + "'><a href= '#close' class='button'>Close</a><a href='" + item.download_url + "' download='" + item.name + "' class='button'>Download (" + (item.size/1048576).toFixed(1) + "Mb)</a></div></div></div></div>");
-              }
-                    );
-            }
-           );
+      var page = "forth-month";
     </script>
-    <script>
-      $.get('/main/navigation.json',
-            function (data) {
-              $.each(data, function(i, item) {
-                $("#nav").append("<p class = 'nav'><a href = '" +item.url+"' name = 'menu' class = 'nav'>"+item.title+"</a></p>");
-              }
-                    );
-            }
-           );
-    </script>
-    <script src="../js/lazyload.min.js">
+    <!-- loads the nav and images -->
+    <script src="/main/js/main.js"> 
     </script>
     <script>
       (function(i,s,o,g,r,a,m){
