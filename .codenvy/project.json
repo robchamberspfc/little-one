@@ -1,1 +1,0 @@
-{"mixinTypes":["contribution"],"builders":{"configs":{}},"runners":{"configs":{"system:/javascript/web/simple":{"ram":1000,"variables":{},"options":{}}},"default":"system:/javascript/web/simple"},"description":"Simple website for allowing friends and family to view baby pictures","type":"blank","attributes":{}}
