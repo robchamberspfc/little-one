@@ -11,32 +11,34 @@
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="row">
-      <div class="col-3 column">
-        <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
-        <hr class = "top">
-        <div id = "nav">
+    <div class ="wrapper">
+      <div class="row">
+        <div class="col-3 column">
+          <img class= "column" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/Leftcolumn.png">
+          <hr class = "top">
+          <div id = "nav">
+          </div>
+          <br>
+          <hr>
         </div>
-        <br>
-        <hr>      
-      </div>
-      <div class="col-8 main">
-        <div class = "head">
-          <h1>
-            Previous photos
-          </h1>
-          <h2>
-            Select a batch of photos
-          </h2>
-          <div id="images"> 
+        <div class="col-8 main">
+          <div class = "head">
+            <h1>
+              Previous photos
+            </h1>
+            <h2>
+              Select a batch of photos
+            </h2>
+            <div id="images">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-1 menu">
-        <div>
-          <a href="#menu">
-            <img class= "menu" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/menu.png">
-          </a>
+        <div class="col-1 menu">
+          <div>
+            <a href="#menu">
+              <img class= "menu" src="https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/menu.png">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -48,12 +50,12 @@
       $.get('previous-photos.json',
             function (data) {
               $.each(data, function(i, item) {
-                $("#images").append("<div class='box'><div class='boxInner'><img class='lazyload tiled' data-src='" 
-                                    + item.photos.image1 + "'></div></div><div class='box hiddenmobile'><div class='boxInner'><img class='lazyload tiled' data-src='" 
-                                    + item.photos.image2 + "'></div></div><div class='box hiddenmobile hiddentablet'><div class='boxInner'><img class='lazyload tiled' data-src='" 
-                                    + item.photos.image3 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop'><div class='boxInner'><img class='lazyload tiled' data-src='" 
-                                    + item.photos.image4 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop hiddenmediumdesktop'><div class='boxInner '><img class='lazyload tiled' data-src='" 
-                                    + item.photos.image5 + "'></div></div><h3> Find more photos in <a href = '" + item.url + 
+                $("#images").append("<div class='box'><div class='boxInner'><img class='lazyload tiled' data-src='"
+                                    + item.photos.image1 + "'></div></div><div class='box hiddenmobile'><div class='boxInner'><img class='lazyload tiled' data-src='"
+                                    + item.photos.image2 + "'></div></div><div class='box hiddenmobile hiddentablet'><div class='boxInner'><img class='lazyload tiled' data-src='"
+                                    + item.photos.image3 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop'><div class='boxInner'><img class='lazyload tiled' data-src='"
+                                    + item.photos.image4 + "'></div></div><div class='box hiddenmobile hiddentablet hiddensmalldesktop hiddenmediumdesktop'><div class='boxInner '><img class='lazyload tiled' data-src='"
+                                    + item.photos.image5 + "'></div></div><h3> Find more photos in <a href = '" + item.url +
                                     "'>" + item.title + "</a></h3>" );
               }
                     );

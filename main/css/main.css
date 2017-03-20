@@ -24,6 +24,10 @@ div.blog {
 body {
   background-color: #523E39;
 }
+div.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 p.head {
   font-size:100%;
   text-align: center;
