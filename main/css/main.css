@@ -102,8 +102,8 @@ img.inline {
   margin-right: auto
 }
 img.column {
-  width: 97%;
-  display: inline
+  display: inline;
+  margin-bottom: -10px
 }
 img.menu {
   width: 93%;
@@ -142,8 +142,7 @@ hr {
   border-style: solid;
   border-color: #523E39;
   border-width: 1px 0 0 0;
-  border-radius: 20px;
-  margin-right: 10px
+  border-radius: 20px
 }
 hr.top {
   height: 30px;
@@ -151,7 +150,7 @@ hr.top {
   border-color: #CEBEBA;
   border-width: 1px 0 0 0;
   border-radius: 20px;
-  margin: 15px 10px 0 0;
+  margin: 15px 0 0 0;
 }
 hr.top:before {
   display: block;
