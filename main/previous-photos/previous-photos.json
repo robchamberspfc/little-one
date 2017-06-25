@@ -86,5 +86,27 @@
       "image4":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/eighth-month/IMG_20170315_183507.jpg",
       "image5":"https://raw.githubusercontent.com/robchamberspfc/little-one/master/content/eighth-month/IMG_20170317_083747.jpg"
         }
+  },
+  {
+"title": "Bertie's ninth month",
+"url": "../ninth-month/index.html",
+"photos": {
+"image1":"",
+"image2":"",
+"image3":"",
+"image4":"",
+"image5":""
   }
+},
+{
+"title": "Bertie's tenth month",
+"url": "../tenth-month/index.html",
+"photos": {
+"image1":"",
+"image2":"",
+"image3":"",
+"image4":"",
+"image5":""
+}
+}
 ]
